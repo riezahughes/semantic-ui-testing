@@ -5,7 +5,7 @@ import { useCounterContext } from "../context/CounterContext";
 
 export default function CounterButtons() {
   // Step 4: Consume the context to access the shared actions
-  const { increment, decrement } = useCounterContext;
+  const { increment, decrement } = useCounterContext();
   return (
     <div>
         <Button onClick={increment}>Add</Button>
